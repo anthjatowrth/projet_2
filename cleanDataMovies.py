@@ -100,7 +100,7 @@ def quick_dataset_summary(df, top_n=5, verbose=True):
     print(f"Lignes : {df.shape[0]}, Colonnes : {df.shape[1]}\n")
     
     print("=== Aperçu des premières lignes ===")
-    print(df.head(), "\n")
+    print(df.head(top_n), "\n")
     
     print("=== Types de colonnes ===")
     print(df.dtypes, "\n")
