@@ -52,7 +52,7 @@ def clean_movie_dataset(df, verbose=True):
     
     # --- 5. Convertir les colonnes numériques ---
     # Identifier les colonnes numériques potentielles
-    num_cols = [c for c in df.columns if df[c].dtype == 'object' and df[c].str.replace('.', '', 1).str.isdigit().all()]
+    num_cols = [c for c in df.columns if df[c].dtypes == 'object' and df[c].str.replace('.', '', 1).str.isdigit().all()]
     for c in num_cols:
         df[c] = pd.to_numeric(df[c], errors='coerce')
         if verbose:
