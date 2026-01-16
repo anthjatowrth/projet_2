@@ -9,4 +9,4 @@ df = pd.read_csv(url, sep='\t', compression='gzip', low_memory=False, nrows = 10
 
 clean_movie_dataset(df, verbose = True)
 
-quick_dataset_summary(df, top_n=5, verbose=True)
+quick_dataset_summary(df, top_n=20, verbose=True)
