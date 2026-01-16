@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from cleanDataMovies import *
 
-df = pd.read_csv('full_data_imdb.csv', sep = ";", nrows = 1000)
+df = pd.read_csv('fulldata_imdb.csv', sep = ",")
 
 clean_movie_dataset(df, verbose=True)
 quick_dataset_summary(df, top_n =20, verbose = True)
