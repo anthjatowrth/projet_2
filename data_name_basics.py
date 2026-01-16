@@ -3,7 +3,7 @@ import pandas as pd
 from cleanDataMovies import *
 
 url = 'https://datasets.imdbws.com/name.basics.tsv.gz'
-df = pd.read_csv(url, sep='\t', compression='gzip', low_memory=False )
+df = pd.read_csv(url, sep='\t', compression='gzip', low_memory=False, nrows =1000 )
 
 clean_movie_dataset(df, verbose = True)
 
