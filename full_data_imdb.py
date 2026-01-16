@@ -39,8 +39,8 @@ dfull = df1.merge(df3, on='tconst', how='inner') \
             .merge(df4, on='tconst', how='inner') \
             .merge(df6, on='tconst', how='inner')
 
-clean_movie_dataset(dfull, verbose=True)
+#clean_movie_dataset(dfull, verbose=True)
 
-quick_dataset_summary(dfull, top_n=5, verbose=True)
+#quick_dataset_summary(dfull, top_n=5, verbose=True)
 
 dfull.to_csv('fulldata_imdb.csv', index = False)
